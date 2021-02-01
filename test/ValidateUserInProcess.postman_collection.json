@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "f662569e-3164-40b8-95a0-e0aad3442ae0",
+		"name": "ValidateUserInProcess",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DEV Validar Usuario en Proceso",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "transaction_id",
+						"value": "{{$randomInt}}{{$randomInt}}{{$randomInt}}{{$randomInt}}",
+						"type": "text"
+					},
+					{
+						"key": "timestamp",
+						"value": "{{timestamp}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "channel_id",
+						"value": "11",
+						"type": "text"
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"auth_code\": 931015,\r\n        \"client_data\": {\r\n            \"email\": \"di.floresr96@gmail.com\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8086/user/in-process/validate",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"user",
+						"in-process",
+						"validate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

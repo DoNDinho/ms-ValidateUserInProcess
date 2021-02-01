@@ -1,0 +1,24 @@
+{
+    "name": "validate-user-in-process",
+    "version": "1.0.0",
+    "description": "Microservicio que valida usuario en proceso de registro",
+    "main": "app.js",
+    "scripts": {
+        "start": "node src/app.js"
+    },
+    "keywords": [],
+    "author": "Diego Flores",
+    "license": "ISC",
+    "dependencies": {
+        "ajv": "^6.12.6",
+        "body-parser": "^1.19.0",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "log4js": "^6.3.0",
+        "mongoose": "^5.10.9"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DoNDinho/ms-ValidateUserInProcess"
+    }
+}
